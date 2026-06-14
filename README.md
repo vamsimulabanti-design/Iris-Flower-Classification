@@ -1,35 +1,46 @@
 # Iris Flower Classification
 
-## Project Overview
+## Overview
 
-This project uses Machine Learning techniques to classify Iris flowers into three species:
+This project implements a Machine Learning model to classify Iris flowers into three species:
 
 - Iris Setosa
 - Iris Versicolor
 - Iris Virginica
 
-The classification is performed using sepal length, sepal width, petal length, and petal width measurements.
-
-The project demonstrates data preprocessing, exploratory data analysis, model training, evaluation, and prediction using Python and Scikit-learn.
-
----
-
-## Dataset
-
-The Iris dataset contains:
-
-- 150 observations
-- 4 numerical features
-- 3 target classes
-
-Features:
+The classification is based on four flower measurements:
 
 - Sepal Length
 - Sepal Width
 - Petal Length
 - Petal Width
 
-Target:
+The project was developed as part of the Inter-Departmental Project-II at Vignan University.
+
+---
+
+## Problem Statement
+
+The objective of this project is to build a Machine Learning model capable of predicting the species of an Iris flower using physical measurements of petals and sepals.
+
+The dataset consists of 150 observations belonging to three Iris species.
+
+---
+
+## Dataset Information
+
+Dataset: Iris Dataset
+
+Total Records: 150
+
+Features:
+
+1. Sepal Length
+2. Sepal Width
+3. Petal Length
+4. Petal Width
+
+Target Classes:
 
 - Setosa
 - Versicolor
@@ -40,80 +51,79 @@ Target:
 ## Technologies Used
 
 - Python
+- Scikit-Learn
 - Pandas
 - NumPy
 - Matplotlib
-- Scikit-learn
 - Jupyter Notebook
+- Anvil
 
 ---
 
-## Project Workflow
+## Machine Learning Workflow
 
-### 1. Data Collection
+### Data Loading
 
-Loaded the Iris dataset using Scikit-learn.
+The Iris dataset was loaded using Scikit-Learn.
 
-### 2. Data Exploration
+### Data Preparation
 
-Performed exploratory data analysis to understand feature distributions and relationships.
+The dataset was separated into:
 
-### 3. Data Visualization
+- Feature Matrix (X)
+- Target Vector (Y)
 
-Created visualizations including:
+### Model Training
 
-- Pair plots
-- Correlation analysis
-- Feature distributions
-
-### 4. Model Building
-
-Implemented:
+The following Machine Learning algorithms were implemented:
 
 - K-Nearest Neighbors (KNN)
 - Decision Tree Classifier
 
-### 5. Model Evaluation
+### Model Evaluation
 
-Compared model performance using:
+The dataset was divided into training and testing sets.
 
-- Accuracy Score
-- Classification Metrics
-- Confusion Matrix
+Accuracy scores were used to compare model performance.
 
-### 6. Prediction
+### Prediction
 
-Built a prediction system capable of classifying unseen flower measurements.
+The trained model predicts the species of an Iris flower using user-provided measurements.
+
+---
+
+## Features
+
+- Iris species prediction
+- Machine Learning classification
+- User input prediction interface
+- Performance comparison of multiple algorithms
 
 ---
 
 ## Results
 
-The machine learning models successfully classified Iris flower species with high accuracy.
+The implemented models successfully classified Iris flower species using flower measurements.
 
-The project demonstrates the effectiveness of supervised learning algorithms for multi-class classification problems.
+The project demonstrates the use of supervised machine learning techniques for classification problems.
 
 ---
 
-## Project Structure
-
-```text
-iris-flower-classification/
-├── data/
-├── notebooks/
-├── src/
-├── images/
-├── README.md
-└── requirements.txt
-```
-
 ## Future Improvements
 
+- Add more classification algorithms
 - Hyperparameter tuning
 - Cross-validation
-- Additional classification models
-- Deployment using Streamlit
-- Interactive dashboard development
+- Streamlit deployment
+- Interactive dashboard
+
+---
+
+## Project Report
+
+The complete project report is included in this repository.
+
+---
 
 ## Author
 
