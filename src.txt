@@ -1,0 +1,39 @@
+SOURCE CODE
+!pip install anvil-uplink
+from sklearn import metrics
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+iris=load_iris()
+#knn
+iris=load_iris()
+x=iris.data
+y=iris.target
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=0)
+knn=KNeighborsClassifier(n_neighbors=5)
+knn.fit(x_train,y_train)
+predict_knn=knn.predict(x_test)
+accuracy_knn=accuracy_score(y_test,predict_knn)*100
+accuracy_knn
+x_new=[[3,4,5,2]]
+y_predict=knn.predict(x_new)
+#decision tree
+from sklearn import tree
+DT=tree.DecisionTreeClassifier()
+DT.fit(x_train,y_train)
+prediction_DT=DT.predict(x_test)
+accuracy_DT=accuracy_score(y_test,prediction_DT)*100
+accuracy_DT
+#comparison
+print("Test result:\n===================================")
+print("model\t \t accuracy")
+print(f"knn: \t \t {(accuracy_knn)*1:.2f}%")
+print(f"decision tree: \t {(accuracy_DT)*1:.2f}%")
+print("===================================")
+def predict_iris(sepal_length, sepal_width, petal_length, petal_width):
+classification = knn.predict([[sepal_length, sepal_width, petal_length, petal_widt
+h]])
+return iris.target_names[classification][0]
+print(y_predict)
+anvil.server.wait_forever()
