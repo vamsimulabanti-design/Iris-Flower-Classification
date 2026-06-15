@@ -1,7 +1,4 @@
-requirements:
-
 numpy
 pandas
 matplotlib
 scikit-learn
-anvil-uplink
